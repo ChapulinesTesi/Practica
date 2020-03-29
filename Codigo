@@ -1,0 +1,44 @@
+def suma(n1=0,n2=0):
+    return n1+n2
+def SUMAR(funcion,n1=0,n2=0):
+    return funcion(n1,n2)
+
+def resta(n1=0,n2=0):
+    return n1-n2
+def RESTAR(funcion,n1=0,n2=0):
+    return funcion(n1,n2)
+
+def multiplicacion(n1=0,n2=0):
+    return n1*n2
+def MULTIPLICAR(fun,n1=0,n2=0):
+    return fun(n1,n2)
+
+def division(n1=0,n2=0):
+    return n1/n2
+def DIVIDIR(fun,n1=0,n2=0):
+    return fun(n1,n2)
+
+print("PROGRAMA QUE REALIZA OPERACIONES CON 2 NÚMEROS\n")
+numero1=float (input("Ingresa el primer numero: "))
+numero2=float (input("Ingresa el segundo numero: "))
+
+print("\n RESULTADOS DE OPERACION")
+fun_suma=suma
+ress=SUMAR(fun_suma,numero1,numero2)
+print("La suma es =",ress)
+
+fun_resta=resta
+resr=RESTAR(fun_resta,numero1,numero2)
+print("La resta es =",resr)
+
+fun_multiplicacion=multiplicacion
+resm=MULTIPLICAR(fun_multiplicacion,numero1,numero2)
+print("La multiplicacion es =",resm)
+
+fun_division=division
+resd=DIVIDIR(fun_division,numero1,numero2)
+if resd <= 0:
+    print("Division indetermindada")
+else:
+    print("La division es =",resd)
+
